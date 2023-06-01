@@ -23,7 +23,7 @@ public class Program {
         Date x3 = new Date(0L);
         Date x4 = new Date(1000L * 60L * 60L * 5L);
 
-        System.out.println("x1 = " + (x1));
+        System.out.println("x1 = " + sdf1.format(x1));
         System.out.println("x2 = " + (x2));
         System.out.println("x3 = " + (x3));
         System.out.println("x4 = " + (x4));

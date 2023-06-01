@@ -3,18 +3,17 @@ package application;
 import javax.swing.*;
 import java.text.ParseException;
 
-
 public class Program {
 
     public static void main(String[] args) throws ParseException {
-        String dataAniversario = JOptionPane.showInputDialog(null, "Digite a data aaniversário:");
+        String dataAniversario = JOptionPane.showInputDialog(null, "Digite a data nascimento:");
         String dataHoje = JOptionPane.showInputDialog(null, "Digite a data atual:");
 
         Integer dataHojeConvertida = transformaStringEmInteiro(dataHoje);
         Integer dataAniversarioConvertida = transformaStringEmInteiro(dataAniversario);
 
         Integer resultadoExibir = calcularIdade(dataHojeConvertida, dataAniversarioConvertida);
-        JOptionPane.showInputDialog(null, resultadoExibir);
+        JOptionPane.showMessageDialog(null, "Você tem " + resultadoExibir + " anos", "Sua idade", 1);
     }
 
     public static Integer calcularIdade(Integer dataHoje, Integer dataAniversario) {
